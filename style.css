@@ -4,7 +4,6 @@ body {
   background: #ffd6e8;
 }
 
-/* GENERAL */
 .page {
   display: none;
   min-height: 100vh;
@@ -21,10 +20,8 @@ button {
   border: none;
   background: #ff6fae;
   color: white;
-  font-size: 15px;
 }
 
-/* PHOTOS */
 .photo-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -44,12 +41,16 @@ button {
 .photo-text {
   margin-top: 8px;
   font-size: 14px;
-  line-height: 1.4;
-  letter-spacing: 0.5px;
   min-height: 38px;
+  letter-spacing: 0.5px;
 }
 
-/* GIFTS */
+.bouquet {
+  width: 70%;
+  max-width: 300px;
+  border-radius: 20px;
+}
+
 .gifts-vertical {
   display: flex;
   flex-direction: column;
@@ -65,43 +66,53 @@ button {
   transform: scale(1.2) rotate(8deg);
 }
 
-/* FINAL LETTER */
 .final {
   background: url('./assets/letter-bg.jpg') center/cover;
+  position: relative;
+  overflow: hidden;
 }
 .final-letter {
   background: rgba(255,255,255,0.95);
-  padding: 24px;
+  padding: 30px;
   border-radius: 18px;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
-/* LOVE PAGE */
+.emoji {
+  position: absolute;
+  top: -10%;
+  font-size: 30px;
+  animation: rain 8s linear infinite;
+}
+.emoji:nth-child(1){left:10%}
+.emoji:nth-child(2){left:25%;animation-delay:2s}
+.emoji:nth-child(3){left:40%;animation-delay:4s}
+.emoji:nth-child(4){left:55%;animation-delay:1s}
+.emoji:nth-child(5){left:70%;animation-delay:3s}
+.emoji:nth-child(6){left:85%;animation-delay:5s}
+
+@keyframes rain {
+  from { top:-10%; }
+  to { top:120%; }
+}
+
 .love-img {
   width: 70%;
   max-width: 300px;
 }
 .love-text {
-  font-size: 28px;
+  font-size: 30px;
   margin-top: 20px;
 }
 
-/* FINAL HEART */
 .heart-final {
   position: relative;
-  overflow: hidden;
-  background: #ffd6e8;
 }
 .big-heart {
   font-size: 120px;
-  animation: pulse 1s infinite;
+  display: none;
 }
 #countdown {
   font-size: 48px;
-  margin-top: 40px;
-}
-
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.2); }
-  100% { transform: scale(1); }
 }

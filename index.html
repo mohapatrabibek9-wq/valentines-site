@@ -26,21 +26,39 @@
   <button onclick="nextPage()">Next 💗</button>
 </section>
 
-<!-- PAGE 3 : PHOTOS -->
+<!-- PAGE 3 : PHOTOS (2x2 GRID, SQUARE, TEXT BELOW) -->
 <section class="page" id="page3">
-  <div class="photos">
-    <img src="assets/photo1.jpg" onclick="photoClicked(this,'Your smile feels like home 🤍')">
-    <img src="assets/photo2.jpg" onclick="photoClicked(this,'Every moment with you feels special 💕')">
-    <img src="assets/photo3.jpg" onclick="photoClicked(this,'You make ordinary days beautiful 🌸')">
-    <img src="assets/photo4.jpg" onclick="photoClicked(this,'How can someone be this perfect and still be mine 🥹💖')">
+
+  <div class="photo-grid">
+
+    <div class="photo-card" onclick="photoClicked(this, 'Your smile feels like home 🤍')">
+      <img src="./assets/photo1.jpg">
+      <p class="photo-text"></p>
+    </div>
+
+    <div class="photo-card" onclick="photoClicked(this, 'Every moment with you feels special 💕')">
+      <img src="./assets/photo2.jpg">
+      <p class="photo-text"></p>
+    </div>
+
+    <div class="photo-card" onclick="photoClicked(this, 'You make ordinary days beautiful 🌸')">
+      <img src="./assets/photo3.jpg">
+      <p class="photo-text"></p>
+    </div>
+
+    <div class="photo-card" onclick="photoClicked(this, 'How can someone be this perfect and still be mine 🥹💖')">
+      <img src="./assets/photo4.jpg">
+      <p class="photo-text"></p>
+    </div>
+
   </div>
-  <p id="photoMsg"></p>
+
   <button id="photoNext" disabled onclick="nextPage()">Next 💗</button>
 </section>
 
 <!-- PAGE 4 : TULIPS -->
 <section class="page" id="page4">
-  <img src="assets/tulips.jpg" class="bouquet">
+  <img src="./assets/tulips.jpg" class="bouquet">
   <p class="text">
     White tulips aren’t loud flowers 🤍<br><br>
     They love quietly, honestly, and forever.
@@ -50,24 +68,30 @@
 
 <!-- PAGE 5 : GIFTS -->
 <section class="page" id="page5">
-  <p class="text">I couldn’t wrap these in paper,<br>so I wrapped them in words 💌</p>
+  <p class="text">
+    I couldn’t wrap these in paper,<br>
+    so I wrapped them in words 💌
+  </p>
+
   <div class="gifts">
     <div onclick="giftClicked(this,'A love that chooses you every single day 🤍')">🎁</div>
     <div onclick="giftClicked(this,'A future filled with peace, laughter, and us 🌷')">🎁</div>
     <div onclick="giftClicked(this,'My heart, my loyalty, my forever — all yours 🥹💖')">🎁</div>
   </div>
+
   <button id="giftNext" disabled onclick="nextPage()">Next 💗</button>
 </section>
 
 <!-- PAGE 6 : FINAL CINEMATIC -->
 <section class="page final" id="page6">
 
-  <div class="falling">❤️</div>
-  <div class="falling">🌷</div>
-  <div class="falling">🧸</div>
-  <div class="falling">❤️</div>
-  <div class="falling">🌷</div>
-  <div class="falling">🧸</div>
+  <!-- EMOJI BLAST + RAIN -->
+  <div class="emoji e1">❤️</div>
+  <div class="emoji e2">🌷</div>
+  <div class="emoji e3">🧸</div>
+  <div class="emoji e4">❤️</div>
+  <div class="emoji e5">🌷</div>
+  <div class="emoji e6">🧸</div>
 
   <div class="final-letter">
     <p>

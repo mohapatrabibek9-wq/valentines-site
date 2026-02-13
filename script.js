@@ -63,7 +63,7 @@ function startCountdown(){
       for(let i=0;i<25;i++){
         const h = document.createElement("div");
         h.innerText = "❤️";
-        h.className = "emoji";
+        h.className = "rain";
         h.style.left = Math.random()*100 + "%";
         h.style.animationDuration = (5+Math.random()*5)+"s";
         document.getElementById("page8").appendChild(h);

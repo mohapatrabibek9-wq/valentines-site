@@ -4,6 +4,7 @@ body {
   background: #ffd6e8;
 }
 
+/* GENERAL */
 .page {
   display: none;
   min-height: 100vh;
@@ -11,10 +12,7 @@ body {
   text-align: center;
   background: linear-gradient(#ffe1ef, #ffc7dd);
 }
-
-.page.active {
-  display: block;
-}
+.page.active { display: block; }
 
 button {
   margin-top: 20px;
@@ -26,92 +24,84 @@ button {
   font-size: 15px;
 }
 
-button:disabled {
-  opacity: 0.4;
-}
-
 /* PHOTOS */
 .photo-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
 }
-
 .photo-card {
-  background: white;
+  background: #fff;
   padding: 6px;
   border-radius: 14px;
 }
-
 .photo-card img {
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 12px;
 }
-
 .photo-text {
-  font-size: 13px;
-  min-height: 32px;
-  margin-top: 6px;
-}
-
-/* TULIPS */
-.bouquet {
-  width: 70%;
-  max-width: 300px;
-  border-radius: 20px;
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+  min-height: 38px;
 }
 
 /* GIFTS */
-.gifts {
+.gifts-vertical {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  font-size: 38px;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+.gift-box {
+  font-size: 42px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+.gift-box.open {
+  transform: scale(1.2) rotate(8deg);
 }
 
-.gift.open {
-  animation: pop 0.4s ease;
-}
-
-@keyframes pop {
-  0% { transform: scale(0.5); }
-  100% { transform: scale(1); }
-}
-
-/* FINAL PAGE */
+/* FINAL LETTER */
 .final {
   background: url('./assets/letter-bg.jpg') center/cover;
+}
+.final-letter {
+  background: rgba(255,255,255,0.95);
+  padding: 24px;
+  border-radius: 18px;
+}
+
+/* LOVE PAGE */
+.love-img {
+  width: 70%;
+  max-width: 300px;
+}
+.love-text {
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+/* FINAL HEART */
+.heart-final {
   position: relative;
   overflow: hidden;
+  background: #ffd6e8;
+}
+.big-heart {
+  font-size: 120px;
+  animation: pulse 1s infinite;
+}
+#countdown {
+  font-size: 48px;
+  margin-top: 40px;
 }
 
-.final-letter {
-  background: rgba(255,255,255,0.92);
-  padding: 22px;
-  border-radius: 18px;
-  max-width: 650px;
-  margin: auto;
-  position: relative;
-  z-index: 2;
-}
-
-/* EMOJI RAIN */
-.emoji {
-  position: absolute;
-  top: -10%;
-  font-size: 30px;
-  animation: rain 8s linear infinite;
-}
-
-.emoji:nth-child(1) { left: 10%; }
-.emoji:nth-child(2) { left: 30%; animation-delay: 2s; }
-.emoji:nth-child(3) { left: 50%; animation-delay: 4s; }
-.emoji:nth-child(4) { left: 70%; animation-delay: 1s; }
-.emoji:nth-child(5) { left: 85%; animation-delay: 3s; }
-
-@keyframes rain {
-  from { top: -10%; }
-  to { top: 120%; }
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
 }

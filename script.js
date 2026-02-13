@@ -42,3 +42,4 @@ function giftClicked(el, msg) {
     document.getElementById('giftNext').disabled = false;
   }
 }
+

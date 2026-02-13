@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Chica 💕</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<section class="page active" id="page1">
+  <h1>Chica 💕</h1>
+  <p>Will you be my Valentine?</p>
+  <button onclick="yesClicked()">YES 💖</button>
+  <button onclick="noClicked()">NO ❌</button>
+  <p id="noText"></p>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page" id="page2">
+  <p class="text">
+    Hi Chica 🌷<br><br>
+    This little world was created only for you 💗
+  </p>
+  <button onclick="nextPage()">Next 💗</button>
+</section>
+
+<!-- PAGE 3 : PHOTOS -->
+<section class="page" id="page3">
+  <div class="photos">
+    <img src="assets/photo1.jpg" onclick="photoClicked(this,'Your smile feels like home 🤍')">
+    <img src="assets/photo2.jpg" onclick="photoClicked(this,'Every moment with you feels special 💕')">
+    <img src="assets/photo3.jpg" onclick="photoClicked(this,'You make ordinary days beautiful 🌸')">
+    <img src="assets/photo4.jpg" onclick="photoClicked(this,'How can someone be this perfect and still be mine 🥹💖')">
+  </div>
+  <p id="photoMsg"></p>
+  <button id="photoNext" disabled onclick="nextPage()">Next 💗</button>
+</section>
+
+<!-- PAGE 4 -->
+<section class="page" id="page4">
+  <p class="text">
+    These white tulips represent a calm, honest love 🤍<br><br>
+    A love that chooses you every single day.
+  </p>
+  <button onclick="nextPage()">Next 💗</button>
+</section>
+
+<!-- PAGE 5 : GIFTS -->
+<section class="page" id="page5">
+  <h2>Here are your gifts 🎁</h2>
+  <div class="gifts">
+    <div onclick="giftClicked(this,'My presence — always 💗')">🎁</div>
+    <div onclick="giftClicked(this,'All our future memories 🌸')">🎁</div>
+    <div onclick="giftClicked(this,'My heart. Forever yours 🥹💖')">🎁</div>
+  </div>
+  <button id="giftNext" disabled onclick="nextPage()">Next 💗</button>
+</section>
+
+<!-- PAGE 6 : LETTER -->
+<section class="page letter" id="page6">
+  <div class="letter-box">
+    <p>
+      My Dearest Chica 🤍,<br><br>
+      You didn’t change my world — you became it.<br><br>
+      In your smile I find peace,<br>
+      in your presence I find home.<br><br>
+      I promise a love that chooses you,<br>
+      even on the hardest days.<br><br>
+      Forever yours,<br>
+      Babu 💖
+    </p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

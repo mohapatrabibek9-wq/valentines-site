@@ -5,14 +5,11 @@
   <title>For Chica 🤍</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Classic romantic font -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- PAGE 1 -->
 <section class="page active" id="page1">
   <h1>Chica 🤍</h1>
   <p>Will you be my Valentine?</p>
@@ -21,7 +18,6 @@
   <p id="noText"></p>
 </section>
 
-<!-- PAGE 2 -->
 <section class="page" id="page2">
   <p class="text">
     This little world was created only for you.<br><br>
@@ -30,136 +26,74 @@
   <button onclick="nextPage()">Next 💗</button>
 </section>
 
-<!-- PAGE 3 : PHOTOS -->
 <section class="page" id="page3">
   <div class="photo-grid">
-
     <div class="photo-card" onclick="photoClicked(this,'Your smile feels like home 🤍')">
-      <img src="./assets/photo1.jpg">
-      <p class="photo-text"></p>
+      <img src="./assets/photo1.jpg"><p class="photo-text"></p>
     </div>
-
     <div class="photo-card" onclick="photoClicked(this,'Every moment with you feels special 💕')">
-      <img src="./assets/photo2.jpg">
-      <p class="photo-text"></p>
+      <img src="./assets/photo2.jpg"><p class="photo-text"></p>
     </div>
-
     <div class="photo-card" onclick="photoClicked(this,'You make ordinary days beautiful 🌸')">
-      <img src="./assets/photo3.jpg">
-      <p class="photo-text"></p>
+      <img src="./assets/photo3.jpg"><p class="photo-text"></p>
     </div>
-
     <div class="photo-card" onclick="photoClicked(this,'How can someone be this perfect and still be mine 🥹')">
-      <img src="./assets/photo4.jpg">
-      <p class="photo-text"></p>
+      <img src="./assets/photo4.jpg"><p class="photo-text"></p>
     </div>
-
   </div>
   <button id="photoNext" disabled onclick="nextPage()">Next 💗</button>
 </section>
 
-<!-- PAGE 4 : TULIPS -->
 <section class="page" id="page4">
   <img src="./assets/tulips.jpg" class="bouquet">
-  <p class="text">
-    White tulips speak softly.<br>
-    They love honestly, calmly, forever.
-  </p>
+  <p class="text">White tulips love quietly, honestly, forever 🤍</p>
   <button onclick="nextPage()">Next 💗</button>
 </section>
 
-<!-- PAGE 5 : GIFTS -->
 <section class="page" id="page5">
   <p class="text">Three things I can never take back from you…</p>
-
   <div class="gifts-vertical">
     <div class="gift-box" onclick="openGift(this,'A love that chooses you every single day 🤍')">🎁</div>
     <div class="gift-box" onclick="openGift(this,'A future filled with peace, laughter, and us 🌷')">🎁</div>
     <div class="gift-box" onclick="openGift(this,'My heart. My loyalty. My forever.')">🎁</div>
   </div>
-
   <button id="giftNext" disabled onclick="nextPage()">Next 💗</button>
 </section>
 
-<!-- PAGE 6 : LETTER -->
-<section class="page final" id="page6">
-  <div class="emoji-rain">❤️🌷🧸</div>
+<section class="page final emoji-active" id="page6">
+  <div class="emoji">❤️</div><div class="emoji">🌷</div><div class="emoji">🧸</div>
+  <div class="emoji">❤️</div><div class="emoji">🌷</div><div class="emoji">🧸</div>
 
   <div class="final-letter">
     <p>
-My dearest Chica 🤍,<br><br>
+      My dearest Chica 🤍,<br><br>
+      I don’t know when it started, but somewhere between your smile and your silence,
+      my heart decided that this is where it belongs.<br><br>
 
-I don’t know when it started,  
-but somewhere between your smile and your silence,  
-my heart quietly decided that this is where it belongs.<br><br>
+      In a world that rushes everything, you are my calm.
+      In chaos, you are my peace.
+      In doubt, you are my certainty.<br><br>
 
-You didn’t arrive in my life like a storm,  
-you came like a soft morning breeze —  
-slow, calm, and comforting —  
-and before I even realized it,  
-everything felt warmer with you around.<br><br>
+      I promise effort. I promise honesty.
+      I promise choosing you, even on the hardest days.<br><br>
 
-In a world that moves too fast,  
-you are the pause I never knew I needed.  
-When life feels heavy,  
-your presence makes it lighter.  
-When my mind feels crowded,  
-thinking of you brings peace.<br><br>
+      This heart, this soul, this forever —
+      all of it belongs to you.<br><br>
 
-I love the way you exist —  
-not loudly, not forcefully —  
-but gently, honestly, beautifully.  
-The way you care,  
-the way you feel things deeply,  
-the way you are unapologetically you.<br><br>
-
-I don’t promise a perfect story.  
-I don’t promise easy days every time.  
-But I promise effort.  
-I promise patience.  
-I promise choosing you,  
-even on the days when things aren’t simple.<br><br>
-
-If love means standing beside someone,  
-not only when it’s convenient  
-but also when it’s hard —  
-then this heart is ready.  
-If love means growing together,  
-learning together,  
-and holding hands through everything —  
-then I’m here.<br><br>
-
-If I had a thousand chances,  
-I would still choose you in every single one of them.  
-In every lifetime.  
-In every version of me.  
-In every possible universe.<br><br>
-
-This heart of mine,  
-this soul,  
-this forever —  
-it all quietly whispers your name.<br><br>
-
-Always.  
-Only.  
-Yours.<br><br>
-
-— Babu 💖
+      Always yours,<br>
+      Babu 💖
     </p>
   </div>
 
   <button onclick="nextPage()">Next 💗</button>
 </section>
 
-<!-- PAGE 7 : I LOVE YOU -->
 <section class="page" id="page7">
   <img src="./assets/bear-love.png" class="love-img">
   <h2 class="love-text">I LOVE YOU MY CHICA 🤍</h2>
-
   <button onclick="nextPage()">I love you too 🤍</button>
 </section>
 
-<!-- PAGE 8 : FINAL BLAST -->
 <section class="page heart-final" id="page8">
   <div id="countdown">3</div>
   <div class="big-heart">❤️</div>

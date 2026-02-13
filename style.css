@@ -22,6 +22,7 @@ button {
   color: white;
 }
 
+/* PHOTOS */
 .photo-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -45,12 +46,7 @@ button {
   letter-spacing: 0.5px;
 }
 
-.bouquet {
-  width: 70%;
-  max-width: 300px;
-  border-radius: 20px;
-}
-
+/* GIFTS */
 .gifts-vertical {
   display: flex;
   flex-direction: column;
@@ -66,6 +62,7 @@ button {
   transform: scale(1.2) rotate(8deg);
 }
 
+/* LETTER PAGE */
 .final {
   background: url('./assets/letter-bg.jpg') center/cover;
   position: relative;
@@ -73,39 +70,46 @@ button {
 }
 .final-letter {
   background: rgba(255,255,255,0.95);
-  padding: 30px;
+  padding: 32px;
   border-radius: 18px;
   font-size: 18px;
-  line-height: 1.7;
+  line-height: 1.8;
+  position: relative;
+  z-index: 2;
 }
 
-.emoji {
+/* 🌧️ EMOJI RAIN (LETTER PAGE FIX) */
+.rain {
   position: absolute;
   top: -10%;
   font-size: 30px;
-  animation: rain 8s linear infinite;
+  animation: rainFall 8s linear infinite;
+  opacity: 0.9;
 }
-.emoji:nth-child(1){left:10%}
-.emoji:nth-child(2){left:25%;animation-delay:2s}
-.emoji:nth-child(3){left:40%;animation-delay:4s}
-.emoji:nth-child(4){left:55%;animation-delay:1s}
-.emoji:nth-child(5){left:70%;animation-delay:3s}
-.emoji:nth-child(6){left:85%;animation-delay:5s}
+.rain:nth-child(1){left:5%}
+.rain:nth-child(2){left:15%;animation-delay:1s}
+.rain:nth-child(3){left:30%;animation-delay:2s}
+.rain:nth-child(4){left:45%;animation-delay:3s}
+.rain:nth-child(5){left:60%;animation-delay:4s}
+.rain:nth-child(6){left:75%;animation-delay:1.5s}
+.rain:nth-child(7){left:85%;animation-delay:2.5s}
+.rain:nth-child(8){left:95%;animation-delay:3.5s}
 
-@keyframes rain {
-  from { top:-10%; }
-  to { top:120%; }
+@keyframes rainFall {
+  from { top: -10%; }
+  to { top: 120%; }
 }
 
+/* LOVE PAGE */
 .love-img {
   width: 70%;
   max-width: 300px;
 }
 .love-text {
   font-size: 30px;
-  margin-top: 20px;
 }
 
+/* FINAL HEART */
 .heart-final {
   position: relative;
 }

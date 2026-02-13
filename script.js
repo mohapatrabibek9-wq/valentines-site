@@ -21,25 +21,37 @@ function noClicked() {
     "WHAT?! 😤 That’s not the right answer… try again 💗";
 }
 
-function photoClicked(el, msg) {
-  if (!el.classList.contains('done')) {
-    el.classList.add('done');
-    photoCount++;
-  }
-  document.getElementById('photoMsg').innerText = msg;
+/* PHOTO CLICK + TYPEWRITER */
+function photoClicked(card, text) {
+  if (card.classList.contains('done')) return;
+
+  card.classList.add('done');
+  photoCount++;
+
+  const textEl = card.querySelector('.photo-text');
+  textEl.innerText = "";
+  let i = 0;
+
+  const typing = setInterval(() => {
+    textEl.innerText += text.charAt(i);
+    i++;
+    if (i >= text.length) clearInterval(typing);
+  }, 35);
+
   if (photoCount === 4) {
     document.getElementById('photoNext').disabled = false;
   }
 }
 
+/* GIFTS */
 function giftClicked(el, msg) {
-  if (!el.classList.contains('done')) {
-    el.classList.add('done');
-    giftCount++;
-    el.innerText = msg;
-  }
+  if (el.classList.contains('done')) return;
+
+  el.classList.add('done');
+  giftCount++;
+  el.innerText = msg;
+
   if (giftCount === 3) {
     document.getElementById('giftNext').disabled = false;
   }
 }
-
